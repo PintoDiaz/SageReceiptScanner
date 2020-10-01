@@ -13,6 +13,7 @@
 		319309E92526043D00BFB9BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319309E72526043D00BFB9BE /* Main.storyboard */; };
 		319309EB2526044000BFB9BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 319309EA2526044000BFB9BE /* Assets.xcassets */; };
 		319309EE2526044000BFB9BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319309EC2526044000BFB9BE /* LaunchScreen.storyboard */; };
+		D822AA2CA88D632F136EECEA /* Pods_SageReceiptScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ADD0FF19DC7187E9F7770D /* Pods_SageReceiptScanner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		319309EA2526044000BFB9BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		319309ED2526044000BFB9BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		319309EF2526044000BFB9BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59ADD0FF19DC7187E9F7770D /* Pods_SageReceiptScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SageReceiptScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74588238AFD9A89674CFD7FC /* Pods-SageReceiptScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SageReceiptScanner.release.xcconfig"; path = "Target Support Files/Pods-SageReceiptScanner/Pods-SageReceiptScanner.release.xcconfig"; sourceTree = "<group>"; };
+		F0E896A0308012687BA7E1F3 /* Pods-SageReceiptScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SageReceiptScanner.debug.xcconfig"; path = "Target Support Files/Pods-SageReceiptScanner/Pods-SageReceiptScanner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D822AA2CA88D632F136EECEA /* Pods_SageReceiptScanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +48,7 @@
 				319309E02526043D00BFB9BE /* SageReceiptScanner */,
 				319309DF2526043D00BFB9BE /* Products */,
 				83192D70B4065F50E8674A6F /* Pods */,
+				CC9B54D4316539A0E8972C3A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +77,18 @@
 		83192D70B4065F50E8674A6F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				F0E896A0308012687BA7E1F3 /* Pods-SageReceiptScanner.debug.xcconfig */,
+				74588238AFD9A89674CFD7FC /* Pods-SageReceiptScanner.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CC9B54D4316539A0E8972C3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59ADD0FF19DC7187E9F7770D /* Pods_SageReceiptScanner.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 319309F22526044000BFB9BE /* Build configuration list for PBXNativeTarget "SageReceiptScanner" */;
 			buildPhases = (
+				7D219C9413751CB59359EB41 /* [CP] Check Pods Manifest.lock */,
 				319309DA2526043D00BFB9BE /* Sources */,
 				319309DB2526043D00BFB9BE /* Frameworks */,
 				319309DC2526043D00BFB9BE /* Resources */,
+				16C45BB3C47ED63557C960BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +157,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16C45BB3C47ED63557C960BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SageReceiptScanner/Pods-SageReceiptScanner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SageReceiptScanner/Pods-SageReceiptScanner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SageReceiptScanner/Pods-SageReceiptScanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D219C9413751CB59359EB41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SageReceiptScanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		319309DA2526043D00BFB9BE /* Sources */ = {
@@ -291,6 +351,7 @@
 		};
 		319309F32526044000BFB9BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0E896A0308012687BA7E1F3 /* Pods-SageReceiptScanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,6 +374,7 @@
 		};
 		319309F42526044000BFB9BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74588238AFD9A89674CFD7FC /* Pods-SageReceiptScanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

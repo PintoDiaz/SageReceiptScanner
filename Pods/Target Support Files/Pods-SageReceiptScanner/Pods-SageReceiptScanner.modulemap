@@ -1,0 +1,6 @@
+framework module Pods_SageReceiptScanner {
+  umbrella header "Pods-SageReceiptScanner-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - WeScan (1.7.0)
+
+DEPENDENCIES:
+  - WeScan (>= 0.9)
+
+SPEC REPOS:
+  trunk:
+    - WeScan
+
+SPEC CHECKSUMS:
+  WeScan: fed582f6c38014d529afb5aa9ffd1bad38fc72b7
+
+PODFILE CHECKSUM: e119805c64843d276043cfe99c65b1b19f5555cc
+
+COCOAPODS: 1.9.3
